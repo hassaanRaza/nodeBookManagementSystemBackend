@@ -7,6 +7,7 @@ const BookSchema = new schema({
         required: true
     },
     BookDescription: String,
+    CreatedAt: Date,
     Author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Author'
